@@ -35,14 +35,22 @@ class calls extends StatelessWidget {
               backgroundImage: NetworkImage(
                 "https://media.istockphoto.com/id/1434185514/vector/portrait-of-man-listening-to-music-with-headphones.jpg?s=612x612&w=0&k=20&c=rs8qvtghFOCYmktQKZd1ApcfUuf7KMz8B7qIff1HNKs=",
               ),
-            ), title: Text("Ajith"), subtitle: Text("Yesterday,11:11pm"),trailing: Icon(Icons.call_outlined),
+            ), title: Text("Ajith"), subtitle: Row(
+              children: [Icon(Icons.call_made),
+                Text("Yesterday,11:11pm"),
+              ],
+            ),trailing: Icon(Icons.call_outlined),
           ),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage(
                 "https://media.istockphoto.com/id/1434185514/vector/portrait-of-man-listening-to-music-with-headphones.jpg?s=612x612&w=0&k=20&c=rs8qvtghFOCYmktQKZd1ApcfUuf7KMz8B7qIff1HNKs=",
               ),
-            ), title: Text("Adi"), subtitle: Text("Yesterday,4.20pm"),trailing: Icon(Icons.call_outlined),
+            ), title: Text("Adi"), subtitle: Row(
+              children: [Icon(Icons.missed_video_call),
+                Text("Yesterday,4.20pm"),
+              ],
+            ),trailing: Icon(Icons.video_call_outlined),
           ),
         ],
       ),
